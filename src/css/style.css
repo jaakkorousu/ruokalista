@@ -1,0 +1,61 @@
+/* autoprefixer grid: autoplace */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.food-name {
+  display: inline-block;
+  margin: 0.25em 0.5em;
+}
+.menu-food button {
+  display: none;
+}
+.menu-food:hover > button {
+  display: inline;
+}
+.main-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: strech;
+}
+.main-nav a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+.get-random {
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 1rem;
+  position: fixed;
+  bottom: 45px;
+  right: 0;
+  left: 0;
+  font-size: 1em;
+}
