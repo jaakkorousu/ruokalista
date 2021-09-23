@@ -1,11 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import sampleFood from "../sample-food";
-import firebase from "../firebase";
+import firebase from "../firebase"; // eslint-disable-line no-unused-vars
 import { getDatabase, ref, set, onValue, off } from "firebase/database";
 import RandomFoods from "./RandomFoods";
-import Food from "./Food";
-import AddFood from "./AddFood";
 import Edit from "./Edit";
 
 class App extends React.Component {
