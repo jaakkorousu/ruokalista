@@ -87,9 +87,6 @@ class App extends React.Component {
   componentDidUpdate() {
     // save to firebase
     const db = getDatabase();
-    // todo:
-    // synkkaa firebaseen syvemmälle /foods
-    // muuten tallentaa kaiken päälle
     set(ref(db, this.state.appName), {
       foods: this.state.foods,
     });
